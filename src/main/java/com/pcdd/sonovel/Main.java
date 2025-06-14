@@ -18,6 +18,7 @@ import com.pcdd.sonovel.model.AppConfig;
 import com.pcdd.sonovel.model.Rule;
 import com.pcdd.sonovel.util.ConfigUtils;
 import com.pcdd.sonovel.util.EnvUtils;
+import com.pcdd.sonovel.web.WebServer;
 import lombok.SneakyThrows;
 import org.jline.reader.LineReader;
 import org.jline.reader.LineReaderBuilder;
@@ -77,6 +78,7 @@ public class Main {
 
     @SneakyThrows
     private static void inputMode() {
+        new WebServer().init();
         Scanner sc = Console.scanner();
         printHint();
 

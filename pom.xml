@@ -109,6 +109,24 @@
             <artifactId>openhtmltopdf-pdfbox</artifactId>
             <version>1.1.26</version>
         </dependency>
+        <!-- Jetty 库 -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>12.0.22</version> <!-- 推荐最新稳定版 -->
+        </dependency>
+
+        <!-- Jetty Servlet 容器支持（必须） -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>11.0.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>websocket-server</artifactId>
+            <version>9.4.57.v20241219</version> <!-- 建议使用最新版本 -->
+        </dependency>
     </dependencies>
 
     <!-- 根据平台打包 V8 -->
